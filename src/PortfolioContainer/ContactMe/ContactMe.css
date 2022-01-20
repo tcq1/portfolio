@@ -1,0 +1,144 @@
+.main-container {
+    min-height: 100vh;
+}
+
+.central-form {
+    max-width: 1100px;
+    padding: 10px;
+    display: flex;
+    border-radius: 12px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--home-background);
+    box-shadow: 0 0 20px -2px var(--home-background);
+}
+
+.central-form h2 {
+    color: var(--white);
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+}
+
+.back-form {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-form .img-back {
+    flex: 1;
+    align-self: center;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.img-back h4 {
+    color: var(--white);
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.img-back img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.central-form form {
+    width: auto;
+    display: flex;
+    color: var(--black);
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -52px;
+    background-color: var(--white);
+    border-radius: 12px;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--dark-orange);
+    letter-spacing: 0.4rem;
+    font-family: "Poppins Bold";
+}
+
+form label {
+    margin-bottom: 5px;
+    color: var(--black);
+    letter-spacing: 0.2rem;
+}
+
+form input, textarea {
+    width: 100%;
+    border: 2px solid var(--black);
+    outline: none;
+    background-color: var(--grey);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    border: 2px solid var(--light-grey-blue);
+    background-color: var(--white);
+}
+
+input:focus {
+    border: 2px solid var(--light-grey-blue);
+    background-color: var(--white);
+}
+
+form button {
+    margin-top: 15px;
+    padding: 5px;
+    outline: none;
+    width: 160px;
+    border: 2px solid var(--dark-orange);
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: var(--home-background);
+    color: var(--white);
+}
+
+form button:hover {
+    background-color: var(--home-background);
+    transition: all ease 0.5s;
+    border: 2px solid var(--home-background);
+}
+
+.img-back {
+    flex: 1;
+    align-self: center;
+    margin-right: 20px;
+}
+
+form {
+    flex: 0.9;
+}
+
+.external i {
+    padding: 7px;
+    color: var(--white);
+}
+
+.external i:hover {
+    transform: scale(1.5);
+}
+
+button .loading {
+    width: 100%;
+}
+
+button .loading img {
+    width: 60px;
+    color: green;
+}
+
