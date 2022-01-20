@@ -4,11 +4,11 @@ import ScrollService from "../../utils/ScrollService";
 import Animations from "../../utils/Animations";
 
 import './Resume.css';
-import EducationLogo from '../../assets/Resume/education.svg';
-import WorkHistoryLogo from '../../assets/Resume/work-history.svg';
-import ProgrammingSkillsLogo from '../../assets/Resume/programming-skills.svg';
-import ProjectsLogo from '../../assets/Resume/projects.svg';
-import InterestsLogo from '../../assets/Resume/interests.svg';
+import EducationLogo from '../../assets/Resume/education.png';
+import WorkHistoryLogo from '../../assets/Resume/work-history.png';
+import ProgrammingSkillsLogo from '../../assets/Resume/programming-skills.png';
+import ProjectsLogo from '../../assets/Resume/projects.png';
+import InterestsLogo from '../../assets/Resume/interests.png';
 
 export default function Resume(props) {
     const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
