@@ -1,0 +1,10 @@
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio-component {
+    margin-top: 500px; !important;
+    margin-bottom: 500px; !important;
+}
