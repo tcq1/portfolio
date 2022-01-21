@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5ba9a4d0.css",
+    "main.css": "/portfolio/static/css/main.b5f14ffd.css",
     "main.js": "/portfolio/static/js/main.6a72ca29.js",
     "static/media/me.jpg": "/portfolio/static/media/me.8165050e6036ee41fe32.jpg",
     "static/media/Poppins-Thin.ttf": "/portfolio/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
@@ -11,18 +11,18 @@
     "static/media/Poppins-Bold.ttf": "/portfolio/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
     "static/media/Poppins-ExtraBold.ttf": "/portfolio/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
     "static/media/mailz.jpeg": "/portfolio/static/media/mailz.d13d5e32cbc73884b526.jpeg",
-    "static/media/profile_pic.jpg": "/portfolio/static/media/profile_pic.53fbb2e886eadb18a1ee.jpg",
+    "static/media/profile_pic.jpeg": "/portfolio/static/media/profile_pic.e5c40d56d76fd2bc955e.jpeg",
     "static/media/interests.png": "/portfolio/static/media/interests.b423b010d515a9f5f95e.png",
     "static/media/projects.png": "/portfolio/static/media/projects.f08f9a7c2ea5f7684607.png",
     "static/media/programming-skills.png": "/portfolio/static/media/programming-skills.c12c8bcfe71b7ff8e600.png",
     "static/media/work-history.png": "/portfolio/static/media/work-history.a5af6f5f55c506676e6f.png",
     "static/media/education.png": "/portfolio/static/media/education.b7ea4c3d423768c5938d.png",
     "index.html": "/portfolio/index.html",
-    "main.5ba9a4d0.css.map": "/portfolio/static/css/main.5ba9a4d0.css.map",
+    "main.b5f14ffd.css.map": "/portfolio/static/css/main.b5f14ffd.css.map",
     "main.6a72ca29.js.map": "/portfolio/static/js/main.6a72ca29.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ba9a4d0.css",
+    "static/css/main.b5f14ffd.css",
     "static/js/main.6a72ca29.js"
   ]
 }
