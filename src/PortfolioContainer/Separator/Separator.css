@@ -14,7 +14,7 @@
 
 .spikes {
     position: relative;
-    background: var(--home-background);
+    background: var(--dark-background);
     height: 5vh;
 }
 
@@ -28,6 +28,6 @@
     display: block;
     height: 55px;
     background-size: 55px 100%;
-    background-image: linear-gradient(135deg, var(--home-background) 25%, transparent 25%), linear-gradient(225deg, var(--home-background) 25%, transparent 25%);
+    background-image: linear-gradient(135deg, var(--dark-background) 25%, transparent 25%), linear-gradient(225deg, var(--dark-background) 25%, transparent 25%);
     background-position: 0 0;
 }

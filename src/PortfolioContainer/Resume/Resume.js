@@ -108,7 +108,7 @@ export default function Resume(props) {
             description: "Working with technologies like Spring, Vaadin, Postgres, and more.",
             fromDate: "Nov 2020",
             toDate: "now",
-            link: "conimon.de",
+            link: "https://conimon.de",
             linkText: "For more details on our products visit "
         },
         {

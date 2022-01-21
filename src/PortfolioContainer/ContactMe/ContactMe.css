@@ -10,12 +10,12 @@
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--home-background);
-    box-shadow: 0 0 20px -2px var(--home-background);
+    background-color: var(--dark-background);
+    box-shadow: 0 0 20px -2px var(--dark-background);
 }
 
 .central-form h2 {
-    color: var(--white);
+    color: var(--light-grey);
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
 }
@@ -36,7 +36,7 @@
 }
 
 .img-back h4 {
-    color: var(--white);
+    color: var(--light-grey);
     letter-spacing: 0.3rem;
     font-weight: 400;
     font-size: 18px;
@@ -63,7 +63,7 @@
 form p {
     text-align: center;
     margin-bottom: 10px;
-    color: var(--dark-orange);
+    color: var(--turquoise);
     letter-spacing: 0.4rem;
     font-family: "Poppins Bold";
 }
@@ -78,7 +78,7 @@ form input, textarea {
     width: 100%;
     border: 2px solid var(--black);
     outline: none;
-    background-color: var(--grey);
+    background-color: var(--light-grey);
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     margin-bottom: 22px;
@@ -87,13 +87,13 @@ form input, textarea {
 }
 
 textarea:focus {
-    border: 2px solid var(--light-grey-blue);
-    background-color: var(--white);
+    border: 2px solid var(--dark-border);
+    background-color: var(--light-grey);
 }
 
 input:focus {
-    border: 2px solid var(--light-grey-blue);
-    background-color: var(--white);
+    border: 2px solid var(--dark-border);
+    background-color: var(--light-grey);
 }
 
 form button {
@@ -101,17 +101,17 @@ form button {
     padding: 5px;
     outline: none;
     width: 160px;
-    border: 2px solid var(--dark-orange);
+    border: 2px solid var(--turquoise);
     font-size: 18px;
     border-radius: 20px;
-    background-color: var(--home-background);
+    background-color: var(--dark-background);
     color: var(--white);
 }
 
 form button:hover {
-    background-color: var(--home-background);
+    background-color: var(--dark-background);
     transition: all ease 0.5s;
-    border: 2px solid var(--home-background);
+    border: 2px solid var(--dark-background);
 }
 
 .img-back {
@@ -126,7 +126,7 @@ form {
 
 .external i {
     padding: 7px;
-    color: var(--white);
+    color: var(--light-grey);
 }
 
 .external i:hover {
@@ -139,6 +139,5 @@ button .loading {
 
 button .loading img {
     width: 60px;
-    color: green;
 }
 

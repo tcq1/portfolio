@@ -38,11 +38,11 @@
 }
 
 .primary-text {
-    color: var(--white);
+    color: var(--light-grey);
 }
 
 .highlighted-text {
-    color: var(--dark-orange);
+    color: var(--turquoise);
 }
 
 .profile-role-tagline {
@@ -57,7 +57,7 @@
 
 .profile-options .highlighted-btn:hover {
     margin: 0 0 0 28px;
-    background-color: cornsilk;
+    background-color: var(--light-grey);
     color: #111;
 
 }
@@ -66,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 0 0 var(--white);
+    box-shadow: 1px 1px 0 0 var(--light-grey);
     border-radius: 50%;
     height: 380px;
     width: 380px;
@@ -95,11 +95,6 @@
     margin-inside: 8px;
 }
 
-.external:hover {
-    transform: scale(1.5);
-    transition: 500ms;
-}
-
 .external:hover i {
-    color: var(--dark-orange);
+    color: var(--turquoise);
 }
