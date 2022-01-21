@@ -39,6 +39,10 @@ export default function Resume(props) {
                         <div className={'header-date'}>
                             {props.fromDate + "-" + props.toDate}
                         </div>
+                    ) : props.fromDate ? (
+                        <div className={'header-date'}>
+                            {props.fromDate}
+                        </div>
                     ) : <div />}
                 </div>
                 {/* Resume information text */}
@@ -50,6 +54,14 @@ export default function Resume(props) {
                 <div className={'resume-header-description'}>
                     <span>{props.description ? props.description : ''}</span>
                 </div>
+
+                {/* Link */}
+                <div className={'resume-header-link'}>
+                    <span>{props.linkText ? props.linkText : ''}</span>
+                    <a href={props.link ? props.link : ''}>
+                        {props.link ? props.link : ''}
+                    </a>
+                </div>
             </div>
         )
     };
@@ -58,7 +70,7 @@ export default function Resume(props) {
     const resumeBullets = [
         {label: "Work History", logoSrc: WorkHistoryLogo},
         {label: "Education", logoSrc: EducationLogo},
-        {label: "Programming Skills", logoSrc: ProgrammingSkillsLogo},
+        {label: "Skills", logoSrc: ProgrammingSkillsLogo},
         {label: "Projects", logoSrc: ProjectsLogo},
         {label: "Interests", logoSrc: InterestsLogo}
     ];
@@ -68,21 +80,21 @@ export default function Resume(props) {
         {
             title: "Master of Science in Computer Science",
             subTitle: "Technische Universität Dresden",
-            description: "Super geil",
+            description: "Focus on Software Engineering, Data Science and Artificial Intelligence",
             fromDate: "2021",
             toDate: "now"
         },
         {
             title: "Bachelor of Science in Computer Science",
             subTitle: "Technische Universität Dresden",
-            description: "Super geil",
+            description: "Bachelor thesis with the topic 'Generating Taxonomy from large text corpora using Machine Learning'",
             fromDate: "2017",
             toDate: "2021"
         },
         {
             title: "Martin Andersen Nexö Gymnasium Dresden",
-            subTitle: "Mathe",
-            description: "Super geil",
+            subTitle: "Finished Abitur with a (German) gpa of 1.6",
+            description: "Math and science specialized school with advanced courses in Math, English and Physics.",
             fromDate: "2009",
             toDate: "2017"
         }
@@ -91,34 +103,40 @@ export default function Resume(props) {
     {/* Work history */}
     const workHistory = [
         {
-            title: "Master of Science in Computer Science",
-            subTitle: "Technische Universität Dresden",
-            description: "Super geil",
-            fromDate: "2021",
-            toDate: "now"
+            title: "Conimon GmbH",
+            subTitle: "Creating web applications for automatic machine diagnostics.",
+            description: "Working with technologies like Spring, Vaadin, Postgres, and more.",
+            fromDate: "Nov 2020",
+            toDate: "now",
+            link: "conimon.de",
+            linkText: "For more details on our products visit "
         },
         {
-            title: "Bachelor of Science in Computer Science",
-            subTitle: "Technische Universität Dresden",
-            description: "Super geil",
-            fromDate: "2017",
-            toDate: "2021"
+            title: "Neuro Imaging Center TU Dresden",
+            subTitle: "Implementing a web application for psychology and neuroscience research",
+            description: "The web application supports researchers by making imaging pipeline processes more accessible.",
+            fromDate: "Apr 2019",
+            toDate: "Okt 2020"
         },
         {
-            title: "Martin Andersen Nexö Gymnasium Dresden",
-            subTitle: "Mathe",
-            description: "Super geil",
-            fromDate: "2009",
-            toDate: "2017"
+            title: "Media center of the TU Dresden",
+            subTitle: "Working on the university website",
+            description: "First professional software development experience using Python and an in-house framework built on top of Plone.",
+            fromDate: "Oct 2018",
+            toDate: "Mar 2019"
         }
     ];
 
     {/* Skills */}
     const programmingSkills = [
-        {skill: "Java", ratingPercentage: 90},
-        {skill: "Python", ratingPercentage: 90},
+        {skill: "Java", ratingPercentage: 95},
+        {skill: "Python", ratingPercentage: 95},
         {skill: "Java Script", ratingPercentage: 60},
         {skill: "ReactJS", ratingPercentage: 70},
+        {skill: "HTML/CSS", ratingPercentage: 70},
+        {skill: "C/C#/C++", ratingPercentage: 50},
+        {skill: "Machine Learning", ratingPercentage: 80},
+        {skill: "SQL", ratingPercentage: 65}
     ];
 
     {/* Projects */}
@@ -126,11 +144,23 @@ export default function Resume(props) {
         {
             title: "Personal portfolio website",
             duration: {
-                fromDate: "2022",
-                toDate: "2022"
+                fromDate: "2022"
             },
-            subHeader: "Technologies used: React JS",
             description: "A personal portfolio website to showcase all my details and projects at one place."
+        },
+        {
+            title: "Crypto Currency forecaster",
+            duration: {
+                fromDate: "2021"
+            },
+            description: "Attempting to predict the future value of a crypto currency using machine learning. Of course it didn't work out well but I learned a lot about data management and machine learning."
+        },
+        {
+            title: "Flappy Bird AI",
+            duration: {
+                fromDate: "2019"
+            },
+            description: "I implemented a Flappy Bird game and trained a neural network with an evolutionary algorithm to play the game. After only a few generations the AI performs extremely well and is basically unbeatable."
         }
     ];
 
@@ -138,8 +168,18 @@ export default function Resume(props) {
     const interests = [
         {
             title: "Cooking",
-            subHeader: "I love cooking",
-            description: "Cooking is my life"
+            subHeader: "In the kitchen since I was 10",
+            description: "Bored by only having the food of my parents I started to learn how to cook the food that I wanted to eat. This turned into a passion that made me and my personal environment very happy."
+        },
+        {
+            title: "Gaming",
+            subHeader: "Strategy games and Strategic Shooters",
+            description: "I love competing in games and challenging my mind by having to think about strategies and tactics."
+        },
+        {
+            title: "Coding",
+            subHeader: "I'm a fan of learning new things and challenging myself",
+            description: "I love to learn new things and I'm always trying to improve my skills with small coding projects. The ones mentioned in the projects tab are only a few of them. More can be found on my GitHub."
         }
     ];
 
@@ -155,6 +195,8 @@ export default function Resume(props) {
                             subHeader={work.subTitle}
                             fromDate={work.fromDate}
                             toDate={work.toDate}
+                            link={work.link}
+                            linkText={work.linkText}
                         />
 
                         <div className={'experience-description'}>
@@ -259,7 +301,7 @@ export default function Resume(props) {
         <div className={'resume-container screen-container fade-in'} id={props.id || ""}>
             <div className={'resume-content'}>
                 {/* Header */}
-                <SectionTitle title={'Resume'} subHeader={'My formal CV'}/>
+                <SectionTitle title={'Resume'} subHeader={'My personal and professional achievements'}/>
                 {/* Card */}
                 <div className={'resume-card'}>
                     {/* Left menu */}

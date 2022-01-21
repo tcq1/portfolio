@@ -20,17 +20,17 @@ export default function AboutMe(props) {
 
     {/* Displayed text */}
     const SCREEN_CONSTANTS = {
-        description: "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
+        description: "Hi, my name is Trung and I am a Vietnam-born, Germany-raised full stack software developer currently working at Conimon GmbH in Dresden, Germany. " +
+            "I'm also a master's student at the TU Dresden in Computer Science with focus on AI, data science and software technologies.",
         highlights: {
             bullets: [
-                "Full Stack web and mobile development",
-                "Interactive Front End as per the design",
-                "React and React native",
-                "Redux for State Management",
-                "Building REST API",
-                "Managing database"
+                "Full Stack software developer",
+                "Machine Learning enthusiast",
+                "Focus on Java and Python",
+                "Building web applications",
+                "Interest in data science and AI",
             ],
-            header: "Here are a few Highlights:"
+            header: "Here are a few aspects:"
         }
     }
 
@@ -53,7 +53,7 @@ export default function AboutMe(props) {
             {/* Parent */}
             <div className={'about-me-parent'}>
                 {/* Title */}
-                <SectionTitle title={'About Me'} subHeader={'My life in a nutshell'}/>
+                <SectionTitle title={'About Me'} subHeader={'Me in a nutshell'}/>
                 {/* Card */}
                 <div className={'about-me-card'}>
                     {/* Profile picture */}

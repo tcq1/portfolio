@@ -42,7 +42,7 @@ export default function Profile() {
                         </span>
 
                         <span className={'profile-role-tagline'}>
-                            Lorem ipsum dolor sit amet constetur.
+                            Developing software since 2015
                         </span>
                     </div>
 

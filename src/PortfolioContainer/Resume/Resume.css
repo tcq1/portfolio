@@ -76,6 +76,7 @@
 .bullet-logo {
     height: 16px;
     margin: 0 30px 0 0;
+    filter: invert(1);
 }
 
 .bullet-icons {
@@ -136,6 +137,10 @@
 .resume-header-description {
     font-size: 12px;
     text-align: justify;
+}
+
+.resume-header-link {
+    font-size: 12px;
 }
 
 .header-date {

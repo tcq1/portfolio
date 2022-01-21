@@ -33,43 +33,45 @@ export default function ContactMe(props) {
     const submitForm = async (e) => {
         e.preventDefault();
 
-        try {
-            let data = {
-                name,
-                email,
-                message
-            };
+        toast.error('Currently disabled. Contact me via email: tru.chu.qu@gmail.com')
 
-            setIsLoading(true);
-
-            const result = await axios.post('/contact', data);
-
-            if (name.length === 0 || email.length === 0 || message.length === 0) {
-                {/* Error message */}
-                setBanner(result.data.message);
-                toast.error(result.data.message);
-                setIsLoading(false);
-            } else if (result.status === 200) {
-                {/* Success message */}
-                setBanner(result.data.message);
-                toast.success(result.data.message);
-                setIsLoading(false);
-
-                setName('');
-                setEmail('');
-                setMessage('');
-            } else {
-                {/* Error message */}
-                setBanner(result.data.message);
-                toast.error("Error Code " + result.status);
-                setIsLoading(false);
-            }
-
-        } catch (error) {
-            console.log(error.message);
-            toast.error("Error: " + error.message);
-            setIsLoading(false);
-        }
+        // try {
+        //     let data = {
+        //         name,
+        //         email,
+        //         message
+        //     };
+        //
+        //     setIsLoading(true);
+        //
+        //     const result = await axios.post('/contact', data);
+        //
+        //     if (name.length === 0 || email.length === 0 || message.length === 0) {
+        //         {/* Error message */}
+        //         setBanner(result.data.message);
+        //         toast.error(result.data.message);
+        //         setIsLoading(false);
+        //     } else if (result.status === 200) {
+        //         {/* Success message */}
+        //         setBanner(result.data.message);
+        //         toast.success(result.data.message);
+        //         setIsLoading(false);
+        //
+        //         setName('');
+        //         setEmail('');
+        //         setMessage('');
+        //     } else {
+        //         {/* Error message */}
+        //         setBanner(result.data.message);
+        //         toast.error("Error Code " + result.status);
+        //         setIsLoading(false);
+        //     }
+        //
+        // } catch (error) {
+        //     console.log(error.message);
+        //     toast.error("Error: " + error.message);
+        //     setIsLoading(false);
+        // }
     };
 
     {/* Process form */}
