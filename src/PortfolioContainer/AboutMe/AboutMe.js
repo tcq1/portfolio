@@ -80,9 +80,11 @@ export default function AboutMe(props) {
                         {/* Buttons */}
                         <div className={'about-me-options'}>
                             <div className={'profile-options'}>
-                                <button className={'primary-btn'} onClick={() => ScrollService.scrollHandler.scrollToContact()}>
-                                    Contact Me
-                                </button>
+                                <a href={'mailto:tru.chu.qu@gmail.com'}>
+                                    <button className={'primary-btn'}>
+                                        Contact Me
+                                    </button>
+                                </a>
                                 <a href={'cv.pdf'} download={'Trung_Chu.pdf'}>
                                     <button className={'highlighted-btn'}>
                                         Get Resume
