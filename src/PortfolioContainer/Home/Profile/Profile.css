@@ -88,13 +88,3 @@
     width: 98%;
     transition: 500ms;
 }
-
-.external i {
-    color: white;
-    padding: 8px 8px 8px 0;
-    margin-inside: 8px;
-}
-
-.external:hover i {
-    color: var(--turquoise);
-}

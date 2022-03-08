@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    background-color: var(--white);
 }
 
 .separator-parent {
@@ -30,4 +31,12 @@
     background-size: 55px 100%;
     background-image: linear-gradient(135deg, var(--dark-background) 25%, transparent 25%), linear-gradient(225deg, var(--dark-background) 25%, transparent 25%);
     background-position: 0 0;
+}
+
+.curved {
+    position: relative;
+    background: var(--dark-background);
+    height: 10vh;
+    border-bottom-left-radius: 200% 200%;
+    border-bottom-right-radius: 200% 200%;
 }

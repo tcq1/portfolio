@@ -6,8 +6,8 @@ export default function Separator() {
     return (
         <div className={'separator-container'}>
             <div className={'separator-parent'}>
-                <img src={FooterImage} alt={'footer-image'}/>
-                {/*<section className="spikes"/>*/}
+                {/*<img src={FooterImage} alt={'footer-image'}/>*/}
+                <section className="curved"/>
             </div>
         </div>
     );

@@ -1,4 +1,5 @@
 import React from "react";
+import './ExternalIcons.css';
 
 export default function ExternalIcons() {
     return (

@@ -1,0 +1,15 @@
+.external i {
+    color: var(--light-grey);
+    padding: 8px 8px 8px 0;
+    margin-inside: 8px;
+}
+
+.external i:hover {
+    transform: scale(1.2);
+    color: var(--turquoise);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
