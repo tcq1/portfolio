@@ -78,14 +78,14 @@ export default function Resume(props) {
     {/* Education history */}
     const educationHistory = [
         {
-            title: "Master of Science in Computer Science",
+            title: "Master in Computer Science",
             subTitle: "Technische Universität Dresden",
             description: "Focus on Software Engineering, Data Science and Artificial Intelligence",
             fromDate: "2021",
             toDate: "now"
         },
         {
-            title: "Bachelor of Science in Computer Science",
+            title: "Bachelor in Computer Science",
             subTitle: "Technische Universität Dresden",
             description: "Bachelor thesis with the topic 'Generating Taxonomy from large text corpora using Machine Learning'",
             fromDate: "2017",
@@ -119,7 +119,7 @@ export default function Resume(props) {
             toDate: "Okt 2020"
         },
         {
-            title: "Media center of the TU Dresden",
+            title: "Media center TU Dresden",
             subTitle: "Working on the university website",
             description: "First professional software development experience using Python and an in-house framework built on top of Plone.",
             fromDate: "Oct 2018",
