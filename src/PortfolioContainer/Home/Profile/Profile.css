@@ -89,23 +89,37 @@
     transition: 500ms;
 }
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1200px) {
     .profile-picture {
         margin: 0 0 0 80px;
+    }
+
+    .profile-details {
+        min-width: 0;
     }
 
     .profile-details-name {
         font-size: 20px;
     }
 
-    .profile-details-roles .primary-text {
-        font-size: 12px;
+    .profile-details-roles {
+        display: flex;
+        justify-content: center;
+        max-width: 500px;
+        overflow-wrap: break-word;
+        height: 100%;
     }
 
-    .profile-options .btn {
-        width: 120px;
-        padding: 11px 0;
-        z-index: 700;
+    .profile-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-options button {
+        width: 180px;
+        margin: 50px 0;
     }
 }
 
