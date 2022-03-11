@@ -105,8 +105,8 @@
     .profile-details-roles {
         display: flex;
         justify-content: center;
-        max-width: 500px;
-        overflow-wrap: break-word;
+        max-width: 550px;
+        overflow: hidden;
         height: 100%;
     }
 
@@ -120,6 +120,10 @@
     .profile-options button {
         width: 180px;
         margin: 20px 0;
+    }
+
+    .profile-details-roles h1 {
+        font-size: 20px;
     }
 }
 
@@ -159,7 +163,7 @@
     }
 
     .profile-details-roles h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -172,5 +176,9 @@
 
     .profile-details {
         width: 95%;
+    }
+
+    .profile-details-roles h1 {
+        font-size: 16px;
     }
 }
