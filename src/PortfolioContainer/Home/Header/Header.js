@@ -79,14 +79,14 @@ export default function Header() {
         <div className={"header-container"} onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
             {/* Parent */}
             <div className={"header-parent"}>
-                {/* Menu button for mobile devices */}
-                <div className={"header-hamburger"} onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
-                    <FontAwesomeIcon className={'header-hamburger-bars'} icon={faBars} />
-                </div>
-
                 {/* Logo */}
                 <div className={'header-logo'}>
                     <span>Trung Chu</span>
+                </div>
+
+                {/* Menu button for mobile devices */}
+                <div className={"header-hamburger"} onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
+                    <FontAwesomeIcon className={'header-hamburger-bars'} icon={faBars} />
                 </div>
 
                 {/* Menu options */}
