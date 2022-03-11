@@ -76,22 +76,6 @@ export default function AboutMe(props) {
                             {/* Highlights */}
                             {renderHighlights()}
                         </div>
-
-                        {/* Buttons */}
-                        <div className={'about-me-options'}>
-                            <div className={'profile-options'}>
-                                <a href={'mailto:tru.chu.qu@gmail.com'}>
-                                    <button className={'primary-btn'}>
-                                        Contact Me
-                                    </button>
-                                </a>
-                                <a href={'cv.pdf'} download={'Trung_Chu.pdf'}>
-                                    <button className={'highlighted-btn'}>
-                                        Get Resume
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
