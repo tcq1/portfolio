@@ -92,8 +92,8 @@ export default function Resume(props) {
             toDate: "2021"
         },
         {
-            title: "Martin Andersen Nexö Gymnasium Dresden",
-            subTitle: "Finished Abitur with a (German) gpa of 1.6",
+            title: "Abitur",
+            subTitle: "Martin Andersen Nexö Gymnasium Dresden",
             description: "Math and science specialized school with advanced courses in Math, English and Physics.",
             fromDate: "2009",
             toDate: "2017"
@@ -267,7 +267,7 @@ export default function Resume(props) {
 
     {/* Carousel Menu */}
     const handleCarousel = (index) => {
-        let offsetHeight = 360;
+        let offsetHeight = window.innerWidth > 1200 ? 360 : 500;
         let newCarouselOffset = {
             style: {
                 transform: "translateY(" + index * offsetHeight * -1 + "px)"}
