@@ -47,5 +47,7 @@ jobs:
     needs: configure-git
     runs-on: ubuntu-latest
     steps:
+      - name: Echo directory
+        run: pwd && ls -la
       - name: Deploy to Github Pages
         run: npm run deploy
