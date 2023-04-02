@@ -4,7 +4,6 @@ import ScrollService from "../../utils/ScrollService";
 import Animations from "../../utils/Animations";
 import ExternalIcons from "../../utils/ExternalIcons/ExternalIcons";
 import Typical from "react-typical";
-import axios from "axios";
 import {toast} from "react-toastify";
 
 import imgBack from '../../assets/ContactMe/images/mailz.jpeg';
@@ -105,7 +104,7 @@ export default function ContactMe(props) {
                     {/* Left part */}
                     <div className={'img-back'}>
                         <h4>Send your Email here!</h4>
-                        <img src={imgBack}/>
+                        <img src={imgBack} alt={''}/>
                     </div>
 
                     {/* Form */}
