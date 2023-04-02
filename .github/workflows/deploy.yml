@@ -33,7 +33,7 @@ jobs:
     steps:
       - name: Configure git
         run:
-          echo ${{ env.repository }} &&
+          echo ${{ env.github_token }} &&
           cd ${{ github.workspace }} &&
           git config --global user.name ${{ env.user_name }} &&
           git config --global user.email ${{ env.user_email }} &&
