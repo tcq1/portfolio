@@ -33,11 +33,10 @@ jobs:
     steps:
       - name: Configure git
         run:
-          echo ${{ env.github_token }} &&
           cd ${{ github.workspace }} &&
           git config --global user.name ${{ env.user_name }} &&
           git config --global user.email ${{ env.user_email }} &&
-          git remote set-url origin https://${{ env.github_token }}@github.com/${{ env.repository }}
+          git remote set-url origin https://${{ env.user_name }}${{ env.github_token }}@github.com/${{ env.repository }}
         env:
           user_name: 'tcq1'
           user_email: 'tru.chu.qu@gmail.com'
