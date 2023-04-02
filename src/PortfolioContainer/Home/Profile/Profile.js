@@ -3,7 +3,6 @@ import Typical from "react-typical";
 
 import ExternalIcons from "../../../utils/ExternalIcons/ExternalIcons";
 import './Profile.css';
-import ScrollService from "../../../utils/ScrollService";
 
 export default function Profile() {
     return (

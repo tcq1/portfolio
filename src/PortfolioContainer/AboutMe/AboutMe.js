@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import SectionTitle from "../../utils/SectionTitle/SectionTitle";
 import ScrollService from "../../utils/ScrollService";
 import Animations from "../../utils/Animations";
