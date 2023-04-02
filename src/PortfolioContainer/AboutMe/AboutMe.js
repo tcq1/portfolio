@@ -20,8 +20,9 @@ export default function AboutMe(props) {
 
     {/* Displayed text */}
     const SCREEN_CONSTANTS = {
-        description: "Hi, my name is Trung and I am a Vietnam-born, Germany-raised full stack software developer currently working at Conimon GmbH in Dresden, Germany. " +
-            "I'm also a master's student at the TU Dresden in Computer Science with focus on AI, data science and software technologies.",
+        description: "Hi, my name is Trung and I am a Vietnam-born, Germany-raised full stack software developer " +
+            "currently working at TraceTronic GmbH in Dresden, Germany. I'm also a master's student at the TU " +
+            "Dresden in Computer Science with focus on Software Engineering, AI, and Data Science.",
         highlights: {
             bullets: [
                 "Full Stack software developer",

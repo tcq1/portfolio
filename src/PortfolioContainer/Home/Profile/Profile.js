@@ -32,7 +32,7 @@ export default function Profile() {
                                         1000,
                                         "Computer Science Bachelor 🎓",
                                         1000,
-                                        "Software Engineer at Conimon 🖥️",
+                                        "ML Engineer at TraceTronic 🖥️",
                                         1000,
                                         "Master's student at TU Dresden 📚",
                                         1000,
